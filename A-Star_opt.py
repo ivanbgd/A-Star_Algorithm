@@ -29,10 +29,6 @@ It represents Dijkstra with Potentials.
 This means that this is just plain Dijkstra with new edge weights.
 Actually, if heuristic (potential) function is identical to 0,
 this is identical to the UCS Dijkstra.
-The higher the potential function, the smaller the set of vertices
-scanned (in the closed set). Of course, it has to be feasible.
-It can be shown that any lower-bounding algorithm with a nonnegative
-potential function visits no more vertices than Dijkstra's algorithm.
 
 It's probably the best to compute the heuristic on the fly.
 A-Star is directed search, which means not many vertices
@@ -55,8 +51,6 @@ Data structures f & g are implemented as arrays.
 Ties in priority queue are broken so the queue behaves in a LIFO manner. This should make it faster.
 https://en.wikipedia.org/wiki/A*_search_algorithm#Implementation_details
 """
-
-
 
 
 import sys
