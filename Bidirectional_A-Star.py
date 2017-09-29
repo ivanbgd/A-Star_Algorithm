@@ -10,7 +10,7 @@ If the graph isn't dense, ie. it's sparse, it's better to implement
 priority queue as heap than as array.
 A graph is sparse when n and m are of the same order of magnitude.
 
-Here, priority queue is implemented by using my module heapq.
+Here, priority queue is implemented by using module heapq.
 
 We put (dist, name) into heap, where dist is f(v), and f(v) = g(v) + h(v),
 that is, known part + heuristic part.
